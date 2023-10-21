@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Growth App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="images/favicon.ico"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__logo">
+                    <a href="#"><img src="images/logo.png" alt="logo" /></a>
+                </div>
+                <div class="navbar__main-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li>
+                            <a href="#" class="btn btn-secondary btn-sm">
+                                Log In
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- TODO: Hamburger Button -->
+                <button class="hamburger-button">
+                    <div class="hamburger-line">&nbsp;</div>
+                    <div class="hamburger-line">&nbsp;</div>
+                </button>
+                <script>
+                    const hamburgerButton =
+                        document.querySelector(".hamburger-button");
+                    hamburgerButton.addEventListener("click", () => {
+                        hamburgerButton.classList.toggle("active");
+                    });
+                </script>
+                <!-- TODO: Mobile Menu -->
+                <div class="mobile-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li>
+                            <a href="#" class="btn btn-secondary btn-sm">
+                                Log In
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="content">
+                        <h1 class="text-xxl">
+                            A powerful solution to grow your startup. Fast!
+                        </h1>
+                        <p class="paragraph">
+                            Organise, collaborate, and track progress seamlessly
+                            with our one-stop-shop startup growth tool.
+                        </p>
+                        <div class="hero__button-group">
+                            <a href="#" class="btn btn-primary btn-lg"
+                                >Get Started</a
+                            >
+                            <a
+                                href="#"
+                                class="btn btn-secondary btn-lg btn--icon"
+                            >
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Book a demo</span>
+                            </a>
+                        </div>
+                        <div class="sm-sc">
+                            <img
+                                src="images/hero-bg-mobile.png"
+                                alt="illustration"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Video -->
+            <section class="video bg-dark">
+                <div class="container-sm">
+                    <h2 class="text-xl text-center">
+                        See how it works and get started in less than 2 minutes
+                    </h2>
+                    <div class="video__video-preview">
+                        <img
+                            src="images/video-preview.png"
+                            alt="Video Preview"
+                        />
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+            </section>
+            <!-- Testimonials -->
+            <section class="testimonials bg-dark">
+                <div class="container">
+                    <h3 class="text-xl">
+                        Don't just take our word for it, see the success stories
+                        from businesses just like yours.
+                    </h3>
+                    <div class="testimonials__group">
+                        <div class="testimonials__item">
+                            <div class="card">
+                                <p class="paragraph">
+                                    “Our business has seen a significant
+                                    increase in productivity since we started
+                                    using the Growth app.”
+                                </p>
+                                <h4 class="testimonials__author">
+                                    Katherine Smith
+                                </h4>
+                                <span class="testimonials__company"
+                                    >Capodopera</span
+                                >
+                            </div>
+                        </div>
+                        <div class="testimonials__item">
+                            <div class="card">
+                                <p class="paragraph">
+                                    “As a small business owner, it's important
+                                    to have a tool that can help me keep track
+                                    of everything. The Growth app has been a
+                                    lifesaver for me, allowing me to manage my
+                                    contacts, schedule appointments, and track
+                                    progress all in one place..”
+                                </p>
+                                <h4 class="testimonials__author">
+                                    Jonathan Lee
+                                </h4>
+                                <span class="testimonials__company"
+                                    >Red Bolt</span
+                                >
+                            </div>
+                        </div>
+                        <div class="testimonials__item">
+                            <div class="card">
+                                <p class="paragraph">
+                                    “The dashboards and reporting feature has
+                                    provided valuable insights into our
+                                    performance and helped us make data-driven
+                                    decisions. It's a game changer for us.”
+                                </p>
+                                <h4 class="testimonials__author">
+                                    David Wilson
+                                </h4>
+                                <span class="testimonials__company">Slide</span>
+                            </div>
+                        </div>
+                        <div class="testimonials__item">
+                            <div class="card">
+                                <p class="paragraph">
+                                    “Our business has seen a significant
+                                    increase in productivity since we started
+                                    using the Growth app.”
+                                </p>
+                                <h4 class="testimonials__author">
+                                    Katherine Smith
+                                </h4>
+                                <span class="testimonials__company"
+                                    >Capodopera</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Pricing -->
+            <section class="pricing">
+                <div class="container-sm">
+                    <div class="pricing__header text-center">
+                        <h2 class="text-lg">Pricing</h2>
+                        <p class="paragraph">
+                            Start free and scale while you grow. No hidden fees.
+                            Unlimited users for free.
+                        </p>
+                    </div>
+                    <div class="pricing__plans">
+                        <div class="pricing__plan pricing__plan--light">
+                            <h3 class="text-lg">Simple</h3>
+                            <p class="paragraph">
+                                Keep track of your contacts, gain valuable
+                                insights, analyse live data and performance
+                                metrics.
+                            </p>
+                            <div class="pricing__category-name">
+                                <h4 class="text-lg">Free</h4>
+                                <span>* No credit card required</span>
+                            </div>
+                            <ul class="pricing__list pricing__list--light">
+                                <li class="pricing__list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Real-time monitoring</span>
+                                </li>
+                                <li class="pricing__list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span
+                                        >Track key performance indicators</span
+                                    >
+                                </li>
+                                <li class="pricing__list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Schedule appointments</span>
+                                </li>
+                                <li class="pricing__list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span
+                                        >Organize, delegate and keep track of
+                                        tasks</span
+                                    >
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary btn-lg"
+                                >Get started</a
+                            >
+                        </div>
+                        <div class="pricing__plan pricing__plan--dark">
+                            <h3 class="text-lg">Premium</h3>
+                            <p class="paragraph">
+                                Keep track of your contacts, gain valuable
+                                insights, analyse live data and performance
+                                metrics.
+                            </p>
+                            <div class="pricing__category-name">
+                                <h4 class="text-lg">$49</h4>
+                                <span>/month</span>
+                            </div>
+                            <ul class="pricing__list pricing__list--dark">
+                                <p class="paragraph">
+                                    Everything from the free plan plus:
+                                </p>
+                                <li class="pricing__list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Data-driven decisions</span>
+                                </li>
+                                <li class="pricing__list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Data visualisation</span>
+                                </li>
+                                <li class="pricing__list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Schedule appointments</span>
+                                </li>
+                                <li class="pricing__list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span
+                                        >Store and organise contact
+                                        information</span
+                                    >
+                                </li>
+                                <li class="pricing__list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span
+                                        >Teal-time communication tools for
+                                        messaging and video conferencing</span
+                                    >
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary btn-lg"
+                                >Get started</a
+                            >
+                        </div>
+                    </div>
+                    <p class="paragraph">
+                        All prices are in USD and charged per month with
+                        applicable taxes added at checkout.
+                    </p>
+                    <a href="#" class="text-btn"
+                        ><span>View features</span
+                        ><i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                </div>
+            </section>
+            <!-- Line-break -->
+            <div class="container">
+                <hr />
+            </div>
+            <!-- FAQs -->
+            <section class="faq">
+                <div class="container-sm">
+                    <h2 class="text-xl text-center">
+                        Frequently asked questions
+                    </h2>
+                    <ul class="faq__menu">
+                        <li class="faq__menu-item faq__menu-item--active">
+                            All
+                        </li>
+                        <li class="faq__menu-item">Getting started</li>
+                        <li class="faq__menu-item">Pricing</li>
+                    </ul>
+                    <div class="faq-content">
+                        <div class="faq-group">
+                            <div class="faq-group-header">
+                                <h4 class="text-md">
+                                    How does the contact management feature help
+                                    me keep track of clients and partners?
+                                </h4>
+                                <i class="fas fa-minus"></i>
+                            </div>
+                            <div class="faq-group-body open">
+                                <p>
+                                    Keep track of your contacts, gain valuable
+                                    insights, analyse live data and performance
+                                    metrics.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-group">
+                            <div class="faq-group-header">
+                                <h4 class="text-md">
+                                    Can I customize the dashboards and reporting
+                                    feature to display the metrics that are most
+                                    important to my business?
+                                </h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-group-body">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ad culpa enim blanditiis
+                                    rem ipsum aliquam, unde iste fugit
+                                    praesentium eos?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-group">
+                            <div class="faq-group-header">
+                                <h4 class="text-md">
+                                    How does the task management feature help me
+                                    delegate tasks to my team and track
+                                    progress?
+                                </h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-group-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Incidunt, a! Quaerat,
+                                    voluptatum. Animi molestias ex quasi
+                                    explicabo minima perferendis commodi.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-group">
+                            <div class="faq-group-header">
+                                <h4 class="text-md">
+                                    Can I collaborate with my team in real-time
+                                    using all tools?
+                                </h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-group-body">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Obcaecati doloremque
+                                    assumenda aut dolorem recusandae quibusdam
+                                    aliquid. Repellat animi quam vitae.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-group">
+                            <div class="faq-group-header">
+                                <h4 class="text-md">
+                                    Is the app available on all devices?
+                                </h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-group-body">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Obcaecati doloremque
+                                    assumenda aut dolorem recusandae quibusdam
+                                    aliquid. Repellat animi quam vitae.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-group">
+                            <div class="faq-group-header">
+                                <h4 class="text-md">
+                                    How does the app help me stay compliant when
+                                    working with freelancers and contractors?
+                                </h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-group-body">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Obcaecati doloremque
+                                    assumenda aut dolorem recusandae quibusdam
+                                    aliquid. Repellat animi quam vitae.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer bg-dark">
+            <div class="footer__logo">
+                <a href="#"><img src="images/logo-white.png" alt="Logo" /></a>
+            </div>
+            <div class="footer__content">
+                <form class="footer__form">
+                    <h4 class="text-md">Subscribe to newsletter</h4>
+                    <p class="paragraph">
+                        Subscribe now to receive tips on how to take your
+                        business to the next level.
+                    </p>
+                    <div class="cta">
+                        <input type="email" placeholder="Enter your email" />
+                        <button class="btn btn-primary btn-sm">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+                <div class="footer__links">
+                    <h4 class="text-sm">Company</h4>
+                    <ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Process</a>
+                        </li>
+                        <li>
+                            <a href="#">Join our team</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="text-sm">Resources</h4>
+                    <ul>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Research</a>
+                        </li>
+                        <li>
+                            <a href="#">Recent Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="text-sm">Contact</h4>
+                    <a href="mailto:hello@growthapp.com">hello@growthapp.com</a>
+                </div>
+            </div>
+            <div class="footer__socials">
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <span class="footer__copyright"
+                >&copy; 2023 Growth. All rights reserved</span
+            >
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
