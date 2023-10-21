@@ -731,11 +731,6 @@ img {
 
 /* Media Queries */
 @media only screen and (max-width: 1200px) {
-    body {
-        background-color: rgba(0, 255, 0, .3);
-        overflow-x: hidden;
-    }
-
     .text-xxl {
         font-size: 3rem;
         line-height: 3.4375rem;
@@ -751,10 +746,6 @@ img {
 }
 
 @media only screen and (max-width: 670px) {
-    body {
-        background-color: rgba(255, 0, 0, .3);
-        overflow-x: hidden;
-    }
 
     .navbar__main-menu {
         display: none;
